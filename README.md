@@ -1,4 +1,4 @@
-# X-Clone
+# Front-Clone_X
 
 A social media clone of X built with Next.js, Tailwind CSS
 
@@ -18,8 +18,8 @@ A social media clone of X built with Next.js, Tailwind CSS
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/front-clone-x.git
-   cd x-clone
+   git clone https://github.com/andersonotavio/front-clone-x.git
+   cd front-clone-x
    ```
 
 2. Install dependencies:
@@ -57,8 +57,3 @@ This project is licensed under the MIT License.
 ## Contact
 For any inquiries, reach out via email at andersonotavio@hotmail.com
 
-
-
-
-
-# front-clone-x
