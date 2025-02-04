@@ -18,8 +18,8 @@ A social media clone of X built with Next.js, Tailwind CSS
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/front-clone-x.git
-   cd x-clone
+   git clone https://github.com/andersonotavio/front-clone-x.git
+   cd front-clone-x
    ```
 
 2. Install dependencies:
