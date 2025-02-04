@@ -1,4 +1,4 @@
-# X-Clone
+# Front-Clone_X
 
 A social media clone of X built with Next.js, Tailwind CSS
 
@@ -57,8 +57,3 @@ This project is licensed under the MIT License.
 ## Contact
 For any inquiries, reach out via email at andersonotavio@hotmail.com
 
-
-
-
-
-# front-clone-x
