@@ -1,5 +1,7 @@
 "use client"
 
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation"
 import { useState } from "react";
 
@@ -18,7 +20,7 @@ export const SignIn = () =>{
         value={emailField}
         onChange={e => setEmailField(e.target.value)}
       />
-
+  
     <input 
         type="password"
         placeholder="Digite sua senha"
