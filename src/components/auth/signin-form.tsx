@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation"
 import { useState } from "react";
 import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 export const SignIn = () =>{
   const router = useRouter();
@@ -28,8 +29,12 @@ export const SignIn = () =>{
         onChange={t => setPasswordField(t)}
         password
       />
-      <button onClick={handleEnterButton}>Entrar</button>
-
+      <Button 
+        label="Entrar" 
+        onClick={handleEnterButton} 
+        size={1}
+      />
+      
     </>
   )
 }
