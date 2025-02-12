@@ -1,4 +1,4 @@
-import { SignIn } from "@/components/auth/signin-form";
+import { SigninForm } from "@/components/auth/signin-form";
 import { Logo } from "@/components/ui/logo";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ export default function Page(){
       <Logo size={56} />
       <h1 className="mt-10 text-2xl">Entre na sua conta</h1>
       <div className="mt-10 mb-14 flex flex-col gap-6">
-        <SignIn />
+        <SigninForm />
       </div>
       <div className="flex flex-col justify-center items-center gap-3 md:flex-row">
         <div className="text-gray-500">Ainda não tem uma conta</div>
