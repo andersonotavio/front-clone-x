@@ -1,4 +1,4 @@
-# Front-Clone_X
+# Front-Clone_X (being developed..)
 
 A social media clone of X built with Next.js, Tailwind CSS
 
