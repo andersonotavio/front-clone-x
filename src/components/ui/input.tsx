@@ -2,7 +2,7 @@
 
 import { faEye, faEyeSlash, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { KeyboardEvent, useState } from "react";
 
 type Props = {
   placeholder: string;
@@ -11,13 +11,20 @@ type Props = {
   value?: string;
   icon?: IconDefinition;
   onChange?: (newValue: string) => void;
+  onEnter?: () => void;
 }
 
-export const Input = ({placeholder, value, password, icon, filled,  onChange}: Props) =>{
+export const Input = ({placeholder, value, password, icon, filled,  onChange, onEnter}: Props) =>{
   const [showPassWord, setShowPassWord] = useState(false);
 
+  const handlekeyup = (event: KeyboardEvent<HTMLInputElement>) => {
+    if(event.code.toLocaleLowerCase() === 'enter' && onEnter){
+      onEnter();
+    }
+  }
+
   return(
-    <div className={`"has-[:focus]:border-white flex items-center h-14 rounded-3xl border-2 border-gary-700 ${filled && 'bg-gray-700' }`}>
+    <div className={`"has-[:focus]:border-white flex items-center h-14 rounded-3xl border-2 border-gray-700 ${filled && 'bg-gray-700' }`}>
       {icon && 
         <FontAwesomeIcon 
           icon={icon}
@@ -31,7 +38,7 @@ export const Input = ({placeholder, value, password, icon, filled,  onChange}: P
         placeholder={placeholder} 
         value={value}
         onChange={e => onChange && onChange(e.target.value)}
-        
+        onKeyUp={handlekeyup}
       />
       {password && 
         <FontAwesomeIcon 
