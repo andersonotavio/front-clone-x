@@ -4,6 +4,7 @@ import { NavItem } from "@/components/nav/nav-item";
 import { NavLogout } from "@/components/nav/nav-logout";
 import { NavMyProfile } from "@/components/nav/nav-profile";
 import { Logo } from "@/components/ui/logo";
+import { RecommendationArea } from "@/components/ui/recommendation-area";
 import { SearchInput } from "@/components/ui/serach-input";
 import { TreandingArea } from "@/components/ui/treading-area";
 import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -41,6 +42,7 @@ const Layout = ({children}: Props) => {
       <aside className="hidden lg:flex flex-col gap-6 sticky top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900">
         <SearchInput hideOnSearch/>
         <TreandingArea />
+        <RecommendationArea />
       </aside>
     </main>
   );
