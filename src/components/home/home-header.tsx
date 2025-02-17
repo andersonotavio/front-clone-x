@@ -11,7 +11,7 @@ export const HomeHeader = () =>{
   return (
       <div className="flex justify-between p-6 border-b-2 border-gray-900">
         <div className="lg:hidden">
-          <Logo size={24} />
+          <Logo size={32} />
         </div>
         <div className="hidden lg:block text-2xl">Página Inicial</div>
 

@@ -3,9 +3,10 @@ import Link from "next/link"
 
 type Props = {
   size: number;
+  property?: boolean;
 }
 
-export const Logo = ({size}: Props) =>{
+export const Logo = ({size, property}: Props) =>{
   return(
     <Link href="/">
       <Image 
@@ -14,6 +15,7 @@ export const Logo = ({size}: Props) =>{
       width={size}
       height={size}
       quality={100}
+      priority
       />
     </Link>
   )
