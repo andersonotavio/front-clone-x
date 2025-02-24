@@ -6,7 +6,7 @@ export const tweet: Tweet ={
   id: 123,
   user: user,
   body: 'Outro dia Magico',
-  image: 'http://images.wondershare.com/repairit/article/2021/08/twitter-header-photo-isssues-1.jpg',
+  image: 'https://images.wondershare.com/repairit/aticle/2021/08/twitter-header-photo-issues-1.jpg',
   likeCount: 523,
   commentCount: 61,
   retweetCount: 0,
